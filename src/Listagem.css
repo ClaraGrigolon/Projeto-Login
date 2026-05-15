@@ -1,0 +1,157 @@
+main{
+    background: #fcfcfc;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.logo{
+    background: #ac0a0a;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.container{
+    margin: 0;
+}
+.list{
+    background: #ffd700;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 3px 10px #3d3939;
+}
+table{
+    border-collapse: collapse;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    table-layout: fixed;
+}
+td{
+    border: 1px solid #570000;
+    padding: 3px;
+    text-align: center;
+    word-wrap: break-word;
+}
+tr:nth-child(even){ /* linhas alternadas */
+    background-color: #ebabab;
+}
+tr:hover{ /* Ao passar o mouse */
+    background-color: #ffd700;
+    color: #000;
+}
+tr:first-child td{ /* Primeira Linha */
+    font-weight: bold;
+    background-color: #ac0a0a;
+    text-align: center;
+    color: #fff;
+}
+.sair{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 50px;
+}
+
+
+/* Celular */
+@media (max-width: 767px){
+
+    .logo{
+        height: 20vh;
+    }
+
+    .logo img{
+        width: 60%;
+    }
+    
+    .list{
+        font-size: 1.6rem;
+        padding: 5px;
+    }
+
+    table{
+        margin-top: 18%;
+        font-size: 0.7rem;
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .sair{
+        background: #ac0a0a;
+        color: #fff; 
+    }
+
+}
+
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px){
+    main{
+        display: flex;
+    }
+
+    .logo{
+        width: 50%;
+        height: 100%;
+    }
+
+    .logo img{
+        width: 80%;
+    }
+
+    .list{
+        font-size: 2rem;
+        padding: 15px;
+    }
+    
+    table{
+        margin-top: 15%;
+        font-size: 1rem;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .sair{
+        background: #ffd700;
+        color: #000; 
+        font-size: 1.2rem;
+    }
+
+}
+
+
+/* Desktop */
+@media (min-width: 1025px){
+    main{
+        display: flex;
+    }
+
+    .logo{
+        width: 50%;
+        height: 100%;
+    }
+
+    .logo img{
+        width: 80%;
+    }
+
+    .list{
+        font-size: 2.2rem;
+        padding: 18px;
+    }
+
+    table{
+        margin-top: 15%;
+        width: 85%;
+        margin-left: 7.5%;
+        font-size: 1.1rem;
+    }
+
+    .sair{
+        background: #ffd700;
+        color: #000; 
+        font-size: 1.5rem;
+    }
+
+}

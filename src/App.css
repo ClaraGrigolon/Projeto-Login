@@ -1,0 +1,211 @@
+main{
+    background: #fcfcfc;
+    height: 100vh;
+}
+.logo{
+    background: #ac0a0a;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+h1{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 7vh;
+}
+p{
+    color: black;
+    margin-left: 10%;
+    margin-top: 2.2vh;
+}
+input{
+    width: 80%;
+    outline: none;
+    border: 1px solid #ac0a0a;
+    border-radius: 10px;
+    color: #ac0a0a;
+    margin-left: 10%;
+    margin-top: 1.5vh;
+    text-indent: 10px;
+}
+a{
+    float: right;
+    margin-top: 18px;
+    font-size: 1.1em;
+    margin-right: 10%;
+    color: #b61515;
+}
+button{
+    border: none;
+    margin-top: 10vh;
+    width: 80%;
+    margin-left: 10%;
+    background: #ac0a0a;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #200000;
+}
+button:hover{
+    background:#ff0000;
+    transition: 0.02s;
+    box-shadow: 0 0 25px #ff5454;
+}
+.cadastro{
+    font-size: 1rem;
+}
+.entrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: none;
+    margin-top: 10vh;
+    width: 80%;
+    margin-left: 10%;
+    background: #ac0a0a;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #200000;
+}
+.entrar:hover{
+    background:#ff0000;
+    transition: 0.02s;
+    box-shadow: 0 0 25px #ff5454;
+}
+
+
+/* Celular */
+@media (max-width: 767px){
+
+    .logo{
+        height: 20vh;
+    }
+
+    .logo img{
+        width: 60%;
+    }
+
+    h1{
+        font-size: 2.4em;
+        margin-top: 6vh;
+    }
+
+    .container{
+        margin-top: 7vh;
+    }
+
+    p{
+        font-size: 2.1vh;
+    }
+
+    input{
+        height: 4.2vh;
+        font-size: 1rem;
+    }
+
+    button{
+        height: 6vh;
+        font-size: 1.6em;
+    }
+
+    .entrar{
+        height: 6vh;
+        font-size: 1.6em;
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px){
+
+    main{
+        display: flex;
+    }
+
+    .logo{
+        width: 50%;
+        height: 100%;
+    }
+
+    .logo img{
+        width: 80%;
+    }
+
+    .container{
+        margin-top: 9vh;
+        width: 50%;
+    }
+    
+    h1{
+        font-size: 3.5em;
+    }
+
+    p{
+        font-size: 3.1vh;
+    }
+
+    input{
+        height: 6vh;
+        font-size: 1.3rem;
+    }
+
+    button{
+        height: 8vh;
+        font-size: 1.8em;
+    }
+
+    .entrar{
+        height: 8vh;
+        font-size: 1.8em;
+    }
+}
+
+
+/* Desktop */
+@media (min-width: 1025px){
+
+    main{
+        display: flex;
+    }
+
+    .logo{
+        width: 50%;
+        height: 100%;
+    }
+
+    .logo img{
+        width: 80%;
+    }
+
+    .container{
+        margin-top: 12vh;
+        width: 50%;
+    }
+    
+    h1{
+        font-size: 3.5em;
+    }
+
+    p{
+        font-size: 3.1vh;
+    }
+
+    input{
+        height: 6vh;
+        font-size: 1.3rem;
+    }
+
+    button{
+        height: 8vh;
+        font-size: 1.8em;
+    }
+
+    .entrar{
+        height: 8vh;
+        font-size: 1.8em;
+    }
+}
